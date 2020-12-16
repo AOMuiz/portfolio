@@ -26,6 +26,69 @@
     padding: 0rem $default-font-size;
   }
 
+  .bottom-links {
+    position: relative;
+    display: block;
+    text-align: left;
+    margin-top: 12rem;
+    width: fit-content;
+    justify-content: center;
+
+    span {
+      font-size: 1.4rem;
+      // line-height: 1.2rem;
+      color: $primary-color;
+      font-family: $fontOne;
+      border-bottom: 0.15rem solid $primary-color;
+      padding: 0rem !important;
+    }
+
+    .divider {
+      border-bottom: 0;
+      margin: 0 1rem;
+    }
+  }
+
+  .vertical {
+    position: absolute;
+    z-index: 0;
+    bottom: 6rem;
+    transform: rotate(90deg);
+
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 1.2rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+
+    .cta-text {
+      margin-left: 1.5rem;
+      font-size: 1.1rem;
+      font-family: $fontOne;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+
+    .circle-button {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 3rem;
+      background-color: $primary-color;
+      opacity: 0.2;
+      position: absolute;
+    }
+  }
+
   .logo-container {
     min-height: 50rem;
     min-width: 55rem;
@@ -82,7 +145,8 @@
     width: 49rem;
     text-transform: lowercase;
     align-self: center;
-    line-height: 5.5rem;
+    line-height: 6.5rem;
+    margin-top: 14rem;
 
     @include respond(tab-land) {
       font-size: 4rem;
@@ -112,21 +176,22 @@
   .button {
     height: 60px;
     width: 15rem;
+    cursor: pointer;
 
     &:before {
       content: '';
       width: 10px;
-      height: 2px;
-      background: slategray;
+      height: 0.2rem;
+      background: $primary-color;
       position: absolute;
       top: 50%;
-      margin-top: -1px;
-      right: 45px;
+      margin-top: -1.5px;
+      right: 21px;
       transition: all 0.3s ease;
     }
 
     &:hover:before {
-      right: 30px;
+      right: 10px;
       width: 30px;
     }
 
@@ -136,17 +201,17 @@
       height: 0;
       border-style: solid;
       border-width: 5px 0 5px 5px;
-      border-color: transparent transparent transparent #000000;
+      border-color: transparent transparent transparent $primary-color;
       position: absolute;
       top: 50%;
-      margin-top: -5px;
-      right: 45px;
+      margin-top: -5.5px;
+      right: 20px;
       transition: all 0.3s ease;
     }
 
     &:hover:after {
       right: 40px;
-      right: 30px;
+      right: 10px;
     }
   }
 
@@ -168,8 +233,8 @@
     }
 
     .cta-text {
-      margin-left: 1.5rem;
-      font-size: 1.1rem;
+      margin-left: 1.9rem;
+      font-size: 1.3rem;
       font-family: $fontOne;
       font-weight: bold;
       text-transform: uppercase;
@@ -177,9 +242,9 @@
     }
 
     .circle-button {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 3rem;
+      width: 4.1rem;
+      height: 4.1rem;
+      border-radius: 4.1rem;
       background-color: $primary-color;
       opacity: 0.2;
       position: absolute;
