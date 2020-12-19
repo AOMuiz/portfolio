@@ -2,12 +2,14 @@
   min-height: 100vh;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   border-bottom: 0px;
   background: $secondary-color;
   font-weight: 400;
   color: $dark-blue-text;
-  padding: 0rem 12rem;
+  justify-content: center;
+  // padding: 0rem 12rem;
   margin-bottom: 0;
   top: 0;
   left: 0;
@@ -15,6 +17,63 @@
   right: 0;
   z-index: -1;
   font-family: $fontTwo;
+
+  .vertical {
+    position: absolute;
+    width: 20rem;
+    height: 5rem;
+    transform: rotate(90deg);
+
+    right: 0;
+    bottom: 5rem;
+
+    .buttonTwo {
+      position: relative;
+      display: flex;
+      width: fit-content;
+      height: fit-content;
+      align-items: center;
+      padding-right: 1rem;
+
+      margin-left: 1.9rem;
+      font-size: 1.3rem;
+      font-family: $fontOne;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $primary-color;
+      cursor: pointer;
+
+      // justify-content: center;
+
+      &::before {
+        position: absolute;
+        content: '';
+        border-style: solid;
+        border-width: 3px 0 3px 5px;
+        border-color: transparent transparent transparent $primary-color;
+
+        justify-self: center;
+        right: 0.5rem;
+        margin-bottom: 0.05rem;
+      }
+
+      &::after {
+        content: '';
+        width: 0.7rem;
+        margin-left: 0.5rem;
+        height: 0.2rem;
+        background-color: $primary-color;
+        align-self: center;
+        transition: all 0.3s ease;
+        margin-bottom: 0.05rem;
+      }
+
+      &:hover::after {
+        width: 6rem;
+        margin-left: 0.1rem;
+      }
+    }
+  }
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
@@ -49,53 +108,12 @@
     }
   }
 
-  .vertical {
-    position: absolute;
-    z-index: 0;
-    bottom: 6rem;
-    transform: rotate(90deg);
-
-    display: flex;
-    align-items: center;
-
-    @include respond(tab-port) {
-      justify-content: center;
-    }
-
-    & a {
-      font-size: 1.2rem;
-
-      @include respond(phone) {
-        font-size: 2rem;
-      }
-    }
-
-    .cta-text {
-      margin-left: 1.5rem;
-      font-size: 1.1rem;
-      font-family: $fontOne;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: $primary-color;
-    }
-
-    .circle-button {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 3rem;
-      background-color: $primary-color;
-      opacity: 0.2;
-      position: absolute;
-    }
-  }
-
   .logo-container {
     min-height: 50rem;
     min-width: 55rem;
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-right: 15rem;
 
     .react-logo {
       position: absolute;
@@ -111,7 +129,7 @@
       font-weight: bold;
       display: block;
       font-family: $fontTwo;
-      text-shadow: 1rem 2rem 3rem $primary-color;
+      text-shadow: 1rem 2rem 3rem rgba($color: $primary-color, $alpha: 0.7);
     }
   }
 
@@ -173,6 +191,7 @@
     text-transform: none;
     font-family: $fontTwo;
   }
+
   .button {
     height: 60px;
     width: 15rem;
