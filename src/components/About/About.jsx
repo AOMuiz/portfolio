@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import { Link } from 'react-scroll';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -25,48 +26,61 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="My Skills" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+            <Fade bottom duration={1000} delay={1500} distance="30px">
+              <div className="js-container">
+                <div className="js">JS</div>
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
-              </div>
-            </Fade>
+            {skillsData.map(({ name, percent }) => {
+              return <ListComponent name={name} percent={percent} />;
+            })}
           </Col>
         </Row>
+
+        <div className=" vertical">
+          <Fade left delay={1000}>
+            <Link to="projects" smooth>
+              <div className="buttonTwo">scroll down</div>
+            </Link>
+          </Fade>
+        </div>
       </Container>
     </section>
   );
 };
 
 export default About;
+
+const ListComponent = ({ name, percent }) => {
+  return (
+    <div style={{ alignItems: `center`, height: `5rem` }}>
+      <div className="list-name">
+        <div>{name}</div>
+        <Fade delay={1000}>
+          <div>{percent}%</div>
+        </Fade>
+      </div>
+
+      <div className="percentage-container">
+        <Fade left>
+          <div className="percent" style={{ width: `${percent}%` }}></div>
+        </Fade>
+      </div>
+    </div>
+  );
+};
+
+const skillsData = [
+  { name: 'React-Native', percent: 90 },
+  { name: 'React', percent: 85 },
+  { name: 'Testing', percent: 55 },
+  { name: 'HTML', percent: 80 },
+  { name: 'CSS', percent: 95 },
+  { name: 'JavaScript', percent: 75 },
+  { name: 'Gatsby', percent: 60 },
+];

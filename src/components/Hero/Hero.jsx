@@ -73,7 +73,7 @@ const Header = () => {
         </Container>
       </div>
       <div className=" vertical">
-        <Fade right>
+        <Fade right delay={1000}>
           <Link to="about" smooth>
             <div className="buttonTwo">scroll down</div>
           </Link>
