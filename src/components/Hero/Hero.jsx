@@ -66,7 +66,7 @@ const Header = () => {
             <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
               <img src={reactLogo} className="react-logo" />
             </Fade>
-            <Jump top={isDesktop} bottom={isMobile} duration={1500} delay={800}>
+            <Jump top={isDesktop} bottom={isMobile} duration={1500} delay={800} cascade>
               <div className="my-name">RA</div>
             </Jump>
           </h1>
