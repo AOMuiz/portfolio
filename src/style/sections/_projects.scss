@@ -1,12 +1,18 @@
 #projects {
-  background-color: $secondary-color;
-  color: $dark-blue-text;
-  // margin-top: -15rem;
-  padding-top: 15rem;
+  background-color: $white-color;
+  color: $primary-color;
 
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
+  }
+
+  .section-title-alt {
+    font-weight: lighter;
+    color: $primary-color;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: $fontOne;
   }
 
   .project-wrapper {
@@ -17,61 +23,18 @@
     }
 
     .row {
-      display: flex;
-      margin-bottom: 8rem;
-      align-items: center;
-      border: 1px solid red;
-      height: 30rem;
-      overflow: hidden;
-      position: relative;
+      margin-bottom: 5.5rem;
+      border-bottom: 0.5px solid rgba($secondary-color, 0.2);
 
       @include respond(phone) {
         margin-bottom: 4rem;
-      }
-
-      .title {
-        font-size: $mid-font-size;
-        // position: relative;
-        transition: all 1s ease;
-
-        &::before {
-          content: '';
-          position: absolute;
-          background-color: green;
-          left: 0;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          opacity: 0;
-        }
-
-        &:hover {
-          font-size: 5rem;
-        }
-      }
-
-      &:hover {
-        background-color: white;
-      }
-
-      &::before {
-        position: absolute;
-        display: inline;
-        background-color: rgba($primary-color, 0.05);
-        content: '';
-        width: 5rem;
-        height: 0.2rem;
-        transition: all 2s ease;
-      }
-
-      &:hover::before {
-        width: 10rem;
-        height: 0.25rem;
       }
     }
 
     &__text {
       text-align: left;
+      line-height: 2.8rem;
+      margin-bottom: 20rem;
 
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
@@ -81,9 +44,11 @@
       }
 
       &-title {
-        font-weight: bold;
-        margin-bottom: 1.8rem;
-        font-size: $mid-font-size;
+        font-weight: lighter;
+        margin: 2rem 0;
+        font-size: 4.5rem;
+        color: $primary-color;
+        font-family: $fontTwo;
 
         @include respond(phone) {
           font-size: 2rem;
@@ -92,13 +57,99 @@
 
       & p > a {
         color: $secondary-color;
+        font-weight: lighter !important;
+      }
+
+      .info {
+        margin-bottom: 5rem;
+
+        .vertical {
+          height: 2.8rem;
+          align-self: center;
+          margin: 3rem 0.5rem auto 1.5rem;
+          align-self: center;
+          display: inline-flex;
+          // border: 1px solid red;
+          border-radius: 2rem;
+          background-color: rgba($secondary-color, 1);
+          // margin-bottom: 8rem;
+
+          a {
+          }
+          .buttonTwo {
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            align-items: center;
+            padding-right: 1rem;
+
+            margin-left: 1.5rem;
+            font-size: 1.2rem;
+            font-family: $fontOne;
+            text-transform: uppercase;
+            color: $primary-color;
+            cursor: pointer;
+            margin: 0 auto;
+            font-weight: 200;
+            margin-bottom: 10rem;
+
+            // justify-content: center;
+
+            &::before {
+              position: absolute;
+              content: '';
+              border-style: solid;
+              border-width: 3px 0 3px 5px;
+              border-color: transparent transparent transparent $primary-color;
+
+              justify-self: center;
+              right: 0.5rem;
+              margin-bottom: 0.05rem;
+            }
+
+            &::after {
+              content: '';
+              width: 0.7rem;
+              margin-left: 0.5rem;
+              height: 0.2rem;
+              background-color: $primary-color;
+              align-self: center;
+              transition: all 0.3s ease;
+              margin-bottom: 0.05rem;
+            }
+
+            &:hover::after {
+              width: 3.5rem;
+              margin-left: 0.1rem;
+            }
+
+            .circle {
+              width: 2.9rem;
+              height: 2.9rem;
+              border-radius: 2.3rem;
+              background-color: $primary-color;
+              position: absolute;
+              z-index: -1;
+              left: -1.5rem;
+              opacity: 0.2;
+            }
+          }
+        }
+
+        .info2 {
+          font-family: $fontOne;
+          font-style: italic;
+          margin-top: 2.5rem;
+        }
       }
     }
 
     &__image {
       width: 90%;
+      // height: 200px;
+      // // object-fit: contain;
       margin: 0 auto;
-
       @include respond(tab-land) {
         width: 100%;
         margin: 0;
@@ -106,14 +157,14 @@
 
       & .thumbnail {
         border: none;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         transition: all 0.2s ease-out;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        // box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
         transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
           0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 
         @include respond(phone) {
-          border: 1px solid #d2d2d2;
+          // border: 1px solid #d2d2d2;
           box-shadow: none;
           margin-bottom: 3.2rem;
         }

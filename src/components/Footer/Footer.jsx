@@ -10,9 +10,9 @@ import { Link as GatsbyLink } from 'gatsby';
 import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
-  const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
-  const { isEnabled } = githubButtons;
+  // const { footer } = useContext(PortfolioContext);
+  // const { networks } = footer;
+  // const { isEnabled } = githubButtons;
 
   return (
     <footer className="footer navbar-static-bottom">
@@ -28,7 +28,7 @@ const Footer = () => {
         <h2 className="available">I'm available for full-time, freelance and contract work.</h2>
 
         <div className=" vertical">
-          <Fade top delay={1000}>
+          <Fade top delay={500}>
             <a href="mailto: rajibola1997@gmail.com">
               <GatsbyLink smooth>
                 <div className="buttonTwo">
@@ -46,12 +46,11 @@ const Footer = () => {
           <div className="line" />
           <Fade cascade>
             <div className="social-links">
-              {networks &&
-                networks.map((network) => {
+              {/* {contactData.map((network) => {
                   const { id, name, url } = network;
                   return (
                     <a
-                      key={id}
+
                       href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
                       rel="noopener noreferrer"
                       target="_blank"
@@ -60,51 +59,36 @@ const Footer = () => {
                       <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
                     </a>
                   );
-                })}
+                })} */}
             </div>
           </Fade>
         </div>
       </Container>
       <div className="lined-circle">
-        {[
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-        ].map((item) => (
-          <hr className="hr-line" />
-        ))}
+        {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
+          (item) => (
+            <div className="hr-line" />
+          )
+        )}
       </div>
     </footer>
   );
 };
 
 export default Footer;
+
+const contactData = [
+  {
+    name: 'map-marker',
+    label: `21 Revolution Street `,
+    country: 'Paris, France',
+  },
+  {
+    name: 'phone',
+    label: '+234 810 755 2523',
+  },
+  {
+    name: 'envelope',
+    label: 'rajibola@gmail.com',
+  },
+];

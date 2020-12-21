@@ -6,6 +6,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  width: 100%;
 
   .big-circle {
     position: absolute;
@@ -16,6 +17,10 @@
     left: -30rem;
     bottom: -30rem;
     opacity: 0.2 !important;
+
+    &:hover {
+      border: 2px solid $white-color;
+    }
   }
 
   .vertical {
@@ -110,17 +115,22 @@
     height: 10rem;
     border-radius: 15rem;
     overflow: hidden;
-    right: 20vw;
+    right: 37vw;
     transform: rotate(-35deg);
-    top: 5vh;
+    top: 10vh;
 
     .hr-line {
       width: 8vw;
-      height: 0.1rem;
+      height: 0.2rem;
       margin: 0.2rem;
       padding: 0rem;
-      background-color: $primary-color;
+      background-color: $secondary-color;
       margin-left: -1rem;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 

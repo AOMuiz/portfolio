@@ -32,10 +32,11 @@ const Header = () => {
 
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <h1 className="hero-title">
-              {title || 'react-native & react\nDeveloper.'} <br />
+              react-native & react{'\n'}Developer. <br />
               <div className="subtitle">
-                {subtitle ||
-                  "Hi, I'm Ridwan Ajibola. A react and react-native developer focused on building responsive cross-platform mobile applications that look the same across various devices and have buttery-smooth user experience."}
+                Hi, I'm Ridwan Ajibola. A react and react-native developer focused on building
+                responsive cross-platform mobile applications that look the same across various
+                devices and have buttery-smooth user experience.
               </div>
             </h1>
           </Fade>
