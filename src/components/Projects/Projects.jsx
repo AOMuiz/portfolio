@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import ProjectImg from '../Image/ProjectImg';
+import projectDetails from '../../mock/details';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -28,7 +29,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <h2 className="section-title-alt">My Work</h2>
 
-          {projects.map((project, index) => {
+          {projectDetails.map((project, index) => {
             const { title, info, info2, url, repo, img, id } = project;
 
             return (
@@ -49,15 +50,7 @@ const Projects = () => {
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
                         <p className="mb-4 info2">{info2 || ''}</p>
-                        {/* <Link
-                          to={`/${title}/`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn"
-                          // href={url || '#!'}
-                        >
-                          More Details
-                        </Link> */}
+
                         <Fade left delay={1000}>
                           <span className=" vertical">
                             <Link to={`/${title}/`} target="_blank" rel="noopener noreferrer">
@@ -106,7 +99,6 @@ const Projects = () => {
                             height="400px"
                           />
                         </div>
-                        {/* </Tilt> */}
                       </a>
                     </div>
                   </Fade>

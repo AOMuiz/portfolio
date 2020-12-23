@@ -12,7 +12,7 @@ const projectDetails = [
       "I was responsible for creating  and deploying the Swift app to have more features and meet Apple's requirements",
     url: '',
     repo: ' ', // if no repo, the button will not show up.
-    video: './videos/FitApp.mp4',
+    video: 'FitApp.mp4',
     screenshots: [
       {
         src: 'FitApp/1.png',
@@ -41,7 +41,7 @@ const projectDetails = [
       'I was responsible for developing the app, deploying the Android apk and iOS builds (via tesflight) for QA, and also writing extensive tests with jest and detox',
     url: '',
     repo: ' ', // if no repo, the button will not show up
-    video: '',
+    video: 'sterling-preview.mp4',
     screenshots: [
       {
         src: 'sterling-shot1.png',
