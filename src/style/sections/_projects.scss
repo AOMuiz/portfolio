@@ -86,13 +86,14 @@
 
             margin-left: 1.5rem;
             font-size: 1.2rem;
-            font-family: $fontOne;
+            font-family: $fontTwo;
             text-transform: uppercase;
             color: $primary-color;
             cursor: pointer;
             margin: 0 auto;
             font-weight: 200;
             margin-bottom: 10rem;
+            font-weight: 600;
 
             // justify-content: center;
 
@@ -106,13 +107,18 @@
               justify-self: center;
               right: 0.5rem;
               margin-bottom: 0.05rem;
+              transition: all 0.35s ease-in-out;
+            }
+
+            &:hover::before {
+              border-width: 5px 0 5px 5px;
             }
 
             &::after {
               content: '';
               width: 0.7rem;
               margin-left: 0.5rem;
-              height: 0.2rem;
+              height: 0.15rem;
               background-color: $primary-color;
               align-self: center;
               transition: all 0.3s ease;
@@ -120,8 +126,8 @@
             }
 
             &:hover::after {
-              width: 3.5rem;
-              margin-left: 0.1rem;
+              width: 0rem;
+              margin-left: 1rem;
             }
 
             .circle {

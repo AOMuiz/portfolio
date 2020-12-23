@@ -61,15 +61,6 @@ const ListComponent = ({ name, percent }) => {
     <div style={{ alignItems: `center`, height: `5rem` }}>
       <div className="list-name">
         <div>{name}</div>
-        <Fade delay={1000}>
-          <div>{percent}%</div>
-        </Fade>
-      </div>
-
-      <div className="percentage-container">
-        <Fade left>
-          <div className="percent" style={{ width: `${percent}%` }}></div>
-        </Fade>
       </div>
     </div>
   );

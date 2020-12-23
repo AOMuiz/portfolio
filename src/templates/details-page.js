@@ -8,10 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 import Image from '../components/Image/Image';
 import SterlingPreview from '../videos/sterling-preview.mp4';
+import FitApp from '../videos/FitApp.mp4';
 import { Layout } from '../components/Layout/Layout';
 
 export default function DetailsPage({ pageContext: { project } }) {
-  const { title, info, info2, img, screenshots } = project;
+  const { title, info, info2, img, screenshots, video } = project;
   const { lang, description } = headData;
 
   return (
@@ -51,7 +52,7 @@ export default function DetailsPage({ pageContext: { project } }) {
             </Col>
             <Col className="app-video" md={4} sm={12}>
               <video autoPlay loop width="100%" height="500px">
-                <source src={SterlingPreview} type="video/mp4" autoplay />
+                <source src={FitApp} type="video/mp4" autoplay />
               </video>
             </Col>
           </Row>

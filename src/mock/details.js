@@ -1,30 +1,33 @@
 const { nanoid } = require('nanoid');
+const { path } = require('path');
+const fitAppVideo = '../videos/FitApp.mp4';
 
 const projectDetails = [
   {
-    img: 'lets-eat-base.png',
-    title: "Let's Eat(Philippines)",
+    img: 'FitApp/1.png',
+    title: 'Fit App',
     info:
       'This is a food-delivery app that had a market Australia, and wanted to expand to the Philippines',
     info2:
-      "I was responsible for modifying and deploying the Swift app to have more features and meet Apple's requirements",
+      "I was responsible for creating  and deploying the Swift app to have more features and meet Apple's requirements",
     url: '',
     repo: ' ', // if no repo, the button will not show up.
+    video: './videos/FitApp.mp4',
     screenshots: [
       {
-        src: 'sterling-shot1.png',
+        src: 'FitApp/1.png',
         label: 'Add lists and customise with a colour',
       },
       {
-        src: 'sterling-shot2.png',
+        src: 'FitApp/2.png',
         label: 'Add lists and customise with a colour',
       },
       {
-        src: 'sterling-shot3.png',
+        src: 'FitApp/3.png',
         label: 'Add lists and customise with a colour',
       },
       {
-        src: 'sterling-shot4.png',
+        src: 'FitApp/4.png',
         label: 'Add lists and customise with a colour',
       },
     ],
@@ -38,62 +41,23 @@ const projectDetails = [
       'I was responsible for developing the app, deploying the Android apk and iOS builds (via tesflight) for QA, and also writing extensive tests with jest and detox',
     url: '',
     repo: ' ', // if no repo, the button will not show up
+    video: '',
     screenshots: [
       {
         src: 'sterling-shot1.png',
+        label: 'Add lists and customise with a colour',
       },
       {
         src: 'sterling-shot2.png',
+        label: 'Add lists and customise with a colour',
       },
       {
         src: 'sterling-shot3.png',
+        label: 'Add lists and customise with a colour',
       },
       {
         src: 'sterling-shot4.png',
-      },
-    ],
-  },
-  {
-    img: 'sterling-base.png',
-    title: 'Sterling OnePay',
-    info: '',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    screenshots: [
-      {
-        src: 'sterling-shot1.png',
-      },
-      {
-        src: 'sterling-shot2.png',
-      },
-      {
-        src: 'sterling-shot3.png',
-      },
-      {
-        src: 'sterling-shot4.png',
-      },
-    ],
-  },
-  {
-    img: 'clane-app-base2.png',
-    title: 'Clane app',
-    info: '',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    screenshots: [
-      {
-        src: 'sterling-shot1.png',
-      },
-      {
-        src: 'sterling-shot2.png',
-      },
-      {
-        src: 'sterling-shot3.png',
-      },
-      {
-        src: 'sterling-shot4.png',
+        label: 'Add lists and customise with a colour',
       },
     ],
   },

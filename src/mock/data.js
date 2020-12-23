@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
+  title: 'Ridwan Ajibola | Front-end Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
 };
@@ -10,7 +10,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'Hi, my name is',
-  name: 'Mosolasi Akinyemi',
+  name: 'Ridwan Ajibola',
   subtitle: "I'm a Mobile Developer",
   cta: '',
 };
@@ -29,7 +29,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'lets-eat-base.png',
-    title: "Let's Eat(Philippines)",
+    title: 'Fit App',
     info:
       'This is a food-delivery app that had a market Australia, and wanted to expand to the Philippines',
     info2:
@@ -39,7 +39,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'hlw-base.png',
+    img: 'FitApp/1.png',
     title: 'HLW Mobile',
     info:
       'This is a react-native app for a US-based architecture firm for their prospective clients to analyze and learn about structural ratings',
