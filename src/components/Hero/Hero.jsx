@@ -39,14 +39,15 @@ const Header = () => {
                 devices and have buttery-smooth user experience.
               </div>
             </h1>
-          </Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+
+            {/* <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px"> */}
             <Link to="projects" smooth duration={1000}>
               <div className="hero-cta button">
                 <div className="circle-button" />
                 <span className="cta-text">{cta || 'see my works'}</span>
               </div>
             </Link>
+            {/* </Fade> */}
           </Fade>
 
           <div className="bottom-links">
@@ -56,6 +57,11 @@ const Header = () => {
             <span className="divider">/</span>
             <a href="https://linkedin.com/mwlite/in/ridwan-ajibola-a10616191">
               <span>LinkedIn</span>
+            </a>
+
+            <span className="divider">/</span>
+            <a href="https://https://docs.google.com/document/d/1fBn2vGhPgkVmyYUSFGTnM4IbBk1GfyyV">
+              <span>CV</span>
             </a>
           </div>
         </Container>
@@ -76,7 +82,7 @@ const Header = () => {
       <div className=" vertical">
         <Fade right delay={1000}>
           <Link to="about" smooth>
-            <div className="buttonTwo">scroll down</div>
+            <div className="buttonTwo">my skills</div>
           </Link>
         </Fade>
       </div>
