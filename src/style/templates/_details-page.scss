@@ -147,7 +147,9 @@
   }
 
   .label {
-    color: rgba($secondary-color, 1);
+    color: $primary-color;
+    font-weight: bold;
+    margin-top: revert;
   }
   //   border-style: solid;
   //   border-width: 1px;

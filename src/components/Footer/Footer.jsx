@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer className="footer navbar-static-bottom">
-      <Fade delay={1000}>
+      <Fade delay={500}>
         <div className="big-circle" />
       </Fade>
 
@@ -28,7 +28,7 @@ const Footer = () => {
         <h2 className="available">I'm available for full-time, freelance and contract work.</h2>
 
         <div className=" vertical">
-          <Fade top delay={500}>
+          <Fade top delay={400}>
             <a href="mailto: rajibola1997@gmail.com">
               <GatsbyLink smooth>
                 <div className="buttonTwo">
@@ -64,13 +64,15 @@ const Footer = () => {
           </Fade>
         </div>
       </Container>
-      <div className="lined-circle">
-        {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
-          (item) => (
-            <div className="hr-line" />
-          )
-        )}
-      </div>
+      <Roll cascade>
+        <div className="lined-circle">
+          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(
+            (_, i) => (
+              <div className="hr-line" key={i} />
+            )
+          )}
+        </div>
+      </Roll>
     </footer>
   );
 };

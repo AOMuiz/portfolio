@@ -38,8 +38,8 @@ const Projects = () => {
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={500}
+                    duration={800}
+                    delay={300}
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
@@ -51,16 +51,14 @@ const Projects = () => {
                         </p>
                         <p className="mb-4 info2">{info2 || ''}</p>
 
-                        <Fade left delay={1000}>
-                          <span className=" vertical">
-                            <Link to={`/${title}/`} target="_blank" rel="noopener noreferrer">
-                              <div className="buttonTwo">
-                                <div className="circle" />
-                                More Details
-                              </div>
-                            </Link>
-                          </span>
-                        </Fade>
+                        <span className=" vertical">
+                          <Link to={`/${title}/`} target="_blank" rel="noopener noreferrer">
+                            <div className="buttonTwo">
+                              <div className="circle" />
+                              More Details
+                            </div>
+                          </Link>
+                        </span>
 
                         {repo && (
                           <a
@@ -80,8 +78,8 @@ const Projects = () => {
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
+                    duration={800}
+                    delay={300}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
