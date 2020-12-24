@@ -68,9 +68,8 @@ const Footer = () => {
                 href={'https://linkedin.com/mwlite/in/ridwan-ajibola-a10616191'}
                 rel="noopener noreferrer"
                 target="_blank"
-                style={{ border: `1px solid red` }}
               >
-                <i className={`fa fa-${'linkedIn' || 'refresh'} fa-inverse`} />
+                <i className={`fa fa-${'linkedin' || 'refresh'} fa-inverse`} />
               </a>
             </div>
           </Fade>
