@@ -67,9 +67,8 @@ const projectDetails = [
     img: 'edacious/1.png',
     title: 'Edacious',
     info:
-      'This is a react-native app for a US-based architecture firm for their prospective clients to analyze and learn about structural ratings',
-    info2:
-      'I was responsible for developing the app, deploying the Android apk and iOS builds (via tesflight) for QA, and also writing extensive tests with jest and detox',
+      'This is a react-native app for daily recipe with location based search and chat feature, and also rating the best recipe.',
+    info2: 'I was responsible for developing the app, and also writing extensive tests with jest',
     url: '',
     repo: '', // if no repo, the button will not show up
     video: 'edacious.mp4',
