@@ -54,7 +54,7 @@ const Header = () => {
               <span>Github</span>
             </a>
             <span className="divider">/</span>
-            <a href="#">
+            <a href="https://linkedin.com/mwlite/in/ridwan-ajibola-a10616191">
               <span>LinkedIn</span>
             </a>
           </div>
