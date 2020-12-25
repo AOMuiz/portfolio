@@ -60,7 +60,7 @@ const Header = () => {
             </a>
 
             <span className="divider">/</span>
-            <a href="https://https://docs.google.com/document/d/1fBn2vGhPgkVmyYUSFGTnM4IbBk1GfyyV">
+            <a href="https://drive.google.com/file/d/1fBn2vGhPgkVmyYUSFGTnM4IbBk1GfyyV/view?usp=sharing">
               <span>CV</span>
             </a>
           </div>
