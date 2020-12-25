@@ -35,6 +35,7 @@ const About = () => {
               </div>
             </Fade>
           </Col>
+
           <Col md={6} sm={12}>
             {skillsData.map(({ name, percent }) => {
               return <ListComponent name={name} percent={percent} />;
@@ -43,7 +44,7 @@ const About = () => {
         </Row>
 
         <div className=" vertical">
-          <Fade left delay={1000}>
+          <Fade right delay={500}>
             <Link to="projects" smooth>
               <div className="buttonTwo">scroll down</div>
             </Link>
@@ -58,20 +59,22 @@ export default About;
 
 const ListComponent = ({ name, percent }) => {
   return (
-    <div style={{ alignItems: `center`, height: `5rem` }}>
-      <div className="list-name">
-        <div>{name}</div>
+    <Fade left cascade delay={400}>
+      <div style={{ alignItems: `center`, height: `5rem` }}>
+        <div className="list-name">
+          <div>{name}</div>
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 };
 
 const skillsData = [
+  { name: 'JavaScript', percent: 75 },
   { name: 'React-Native', percent: 90 },
   { name: 'React', percent: 85 },
-  { name: 'Testing', percent: 55 },
+  { name: 'Gatsby', percent: 60 },
+  { name: 'Unit Testing', percent: 55 },
   { name: 'HTML', percent: 80 },
   { name: 'CSS', percent: 95 },
-  { name: 'JavaScript', percent: 75 },
-  { name: 'Gatsby', percent: 60 },
 ];
