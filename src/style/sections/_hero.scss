@@ -1,6 +1,5 @@
 #hero {
   min-height: 100vh;
-  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -9,7 +8,6 @@
   font-weight: 400;
   color: $dark-blue-text;
   justify-content: center;
-  // padding: 0rem 12rem;
   margin-bottom: 0;
   top: 0;
   left: 0;
@@ -236,10 +234,12 @@
       font-size: 3.5rem;
       line-height: 1.5;
       width: auto;
+      margin-top: 5rem;
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
       width: auto;
+      margin-top: 5rem;
     }
   }
 

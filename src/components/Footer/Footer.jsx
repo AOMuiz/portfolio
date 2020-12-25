@@ -39,7 +39,6 @@ const Footer = () => {
             </a>
           </Fade>
         </div>
-        <hr />
 
         <div className="flex">
           <span>© Ridwan Ajibola 2020</span>

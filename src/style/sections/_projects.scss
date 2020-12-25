@@ -51,7 +51,8 @@
         font-family: $fontTwo;
 
         @include respond(phone) {
-          font-size: 2rem;
+          font-size: 3rem;
+          font-weight: 200;
         }
       }
 
