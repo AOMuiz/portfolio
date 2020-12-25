@@ -79,13 +79,13 @@ const Header = () => {
           </h1>
         </Container>
       </div>
-      <div className=" vertical">
+      {/* <div className=" vertical">
         <Fade right delay={1000}>
           <Link to="about" smooth>
             <div className="buttonTwo">my skills</div>
           </Link>
         </Fade>
-      </div>
+      </div> */}
     </section>
   );
 };
