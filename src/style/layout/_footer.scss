@@ -18,6 +18,13 @@
     bottom: -30rem;
     opacity: 0.2 !important;
 
+    @include respond(phone) {
+      width: 30rem;
+      height: 30rem;
+      left: -10rem;
+      bottom: -7rem;
+    }
+
     &:hover {
       border: 2px solid $secondary-color;
     }
@@ -119,8 +126,14 @@
     transform: rotate(-35deg);
     top: 10vh;
 
+    @include respond(phone) {
+      width: 10rem;
+      height: 10rem;
+      right: 2rem;
+    }
+
     .hr-line {
-      width: 8vw;
+      width: 20rem;
       height: 0.2rem;
       margin: 0.3rem;
       padding: 0rem;

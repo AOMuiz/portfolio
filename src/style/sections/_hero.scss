@@ -26,6 +26,20 @@
 
     right: 0;
     bottom: 2.3rem;
+
+    @include respond(tab-land) {
+      right: -5rem;
+    }
+    @include respond(tab-port) {
+      right: -5rem;
+    }
+    @include respond(phone) {
+      right: -5rem;
+    }
+    @include respond(phone-xs) {
+      right: -5rem;
+    }
+
     .buttonTwo {
       position: relative;
       display: flex;
@@ -115,10 +129,10 @@
     align-items: center;
 
     @include respond(tab-land) {
-      display: none;
+      // display: none;
     }
     @include respond(tab-port) {
-      display: none;
+      // display: none;
     }
     @include respond(phone) {
       display: none;
@@ -132,6 +146,13 @@
       width: 55rem;
       left: 0;
       top: 0;
+
+      @include respond(tab-land) {
+        width: 40rem;
+      }
+      @include respond(tab-port) {
+        width: 35rem;
+      }
     }
 
     .my-name {
@@ -142,6 +163,17 @@
       display: block;
       font-family: $fontOne;
       text-shadow: 1rem 2rem 3rem rgba($color: $primary-color, $alpha: 0.7);
+
+      @include respond(tab-land) {
+        font-size: 22rem;
+        line-height: 40rem;
+        margin-left: -15rem;
+      }
+      @include respond(tab-port) {
+        font-size: 22rem;
+        line-height: 40rem;
+        margin-left: -15rem;
+      }
     }
   }
 
@@ -194,16 +226,20 @@
 
     @include respond(tab-land) {
       font-size: 4rem;
+      width: 45rem;
     }
     @include respond(tab-port) {
       font-size: 3.6rem;
+      width: auto;
     }
     @include respond(phone) {
       font-size: 3.5rem;
       line-height: 1.5;
+      width: auto;
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
+      width: auto;
     }
   }
 

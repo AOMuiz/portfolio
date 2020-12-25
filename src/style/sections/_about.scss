@@ -25,16 +25,38 @@
     border-radius: 2rem;
     transition: all 0.5s ease;
     position: relative;
+    font-size: 20rem;
+    font-family: $fontOne;
+    line-height: 20rem;
+
+    @include respond(tab-land) {
+      width: 25rem;
+      height: 25rem;
+      border-radius: 1.7rem;
+      font-size: 17rem;
+      font-family: $fontOne;
+      line-height: 17rem;
+    }
+    @include respond(tab-port) {
+      width: 23rem;
+      height: 23rem;
+      border-radius: 1.4rem;
+      font-size: 15rem;
+      font-family: $fontOne;
+      line-height: 15rem;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+    @include respond(phone-xs) {
+      display: none;
+    }
 
     &:hover {
       margin-top: -2rem;
     }
 
     .js {
-      font-size: 20rem;
-      font-family: $fontOne;
-      text-shadow: 1rem 2rem 0.2rem rgba($secondary-color, 0.2);
-      line-height: 20rem;
       position: absolute;
       right: 2rem;
       bottom: 1rem;
@@ -49,6 +71,19 @@
 
     right: 0;
     bottom: 5rem;
+
+    @include respond(tab-land) {
+      right: -5rem;
+    }
+    @include respond(tab-port) {
+      right: -5rem;
+    }
+    @include respond(phone) {
+      right: -5rem;
+    }
+    @include respond(phone-xs) {
+      right: -5rem;
+    }
 
     .buttonTwo {
       position: relative;
