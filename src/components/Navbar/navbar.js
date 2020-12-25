@@ -8,7 +8,7 @@ const NavBar = () => {
     <Navbar bg="white" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand />
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="collaps" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto pt-3">
             <GLink smooth to="/">

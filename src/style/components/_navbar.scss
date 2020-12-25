@@ -4,3 +4,13 @@
     padding-bottom: -0.2rem;
   }
 }
+
+.collaps {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  // background-color: red;
+  &:focus {
+    outline: none;
+  }
+}
