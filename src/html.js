@@ -1,30 +1,40 @@
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/no-danger */
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable jsx-a11y/html-has-lang */
 import React from 'react';
 import PropTypes from 'prop-types';
+import LoaderSVG from './images/loader.svg';
 
-export default function HTML({
-  htmlAttributes,
-  headComponents,
-  bodyAttributes,
-  preBodyComponents,
-  postBodyComponents,
-  body,
-}) {
+export default function HTML(props) {
   return (
-    <html {...htmlAttributes}>
+    <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        {headComponents}
+        {props.headComponents}
       </head>
-      <body {...bodyAttributes}>
-        {preBodyComponents}
-        <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
-        {postBodyComponents}
+      <body {...props.bodyAttributes}>
+        {props.preBodyComponents}
+
+        <div
+          key={`loader`}
+          id="___loader"
+          style={{
+            alignItems: 'center',
+            backgroundColor: '#363636',
+            display: 'flex',
+            justifyContent: 'center',
+            position: 'absolute',
+            color: `white`,
+            left: 0,
+            top: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 100,
+          }}
+        >
+          <img src={LoaderSVG} alt="loading spinner" width="150rem" height="150rem" />
+        </div>
+        <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
+        {props.postBodyComponents}
       </body>
     </html>
   );
