@@ -4,7 +4,9 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'Ridwan Ajibola | Front-end Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  description: `Hi, I\'m Ridwan Ajibola. A react and react-native developer focused on building
+  responsive cross-platform mobile applications that look the same across various
+  devices and have buttery-smooth user experience.`, // e.g: Welcome to my website
 };
 
 // HERO DATA
