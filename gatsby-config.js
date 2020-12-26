@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Ridwan Ajibola portfolio`,
+        short_name: `Ridwan`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#f9f9f9`,
