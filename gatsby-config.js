@@ -33,7 +33,7 @@ module.exports = {
         short_name: `Ridwan`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#f9f9f9`,
+        theme_color: `#363636`,
         display: `standalone`,
         icon: 'src/images/favicon.png',
       },

@@ -12,15 +12,14 @@ import Video from '../components/Video/Video';
 
 export default function DetailsPage({ pageContext: { project } }) {
   const { title, info, info2, img, screenshots, video } = project;
-  const { lang, description } = headData;
 
   return (
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{'More Details' || title}</title>
-        <html lang={lang || 'en'} />
-        <meta name="description" content={description || 'More details page'} />
+        <title>{'More Details' || headData.title}</title>
+        <html lang={headData.lang || 'en'} />
+        <meta name="description" content={headData.description || 'More details page'} />
       </Helmet>
 
       <Container>
