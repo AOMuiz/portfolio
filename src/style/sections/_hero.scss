@@ -205,6 +205,11 @@
     @include respond(phone) {
       left: 2%;
       line-height: 1.5;
+      transition: all 1s ease;
+
+      &:hover {
+        left: 10%;
+      }
     }
     @include respond(phone-xs) {
       left: 2%;
