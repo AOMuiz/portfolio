@@ -29,9 +29,16 @@ export default function HTML(props) {
             right: 0,
             bottom: 0,
             zIndex: 100,
+            textAlign: `center`,
           }}
         >
-          <img src={LoaderSVG} alt="loading spinner" width="150rem" height="150rem" />
+          <img
+            src={LoaderSVG}
+            alt="loading spinner"
+            width="100vw"
+            height="100vw"
+            style={styles.loading}
+          />
         </div>
         <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
         {props.postBodyComponents}
@@ -47,4 +54,36 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
+};
+
+const styles = {
+  loading: {
+    animation: `$radialcolor 3s ease infinity`,
+  },
+
+  '@keyframes radialcolor': {
+    '0%': {
+      width: '150vw',
+      height: '150vw',
+    },
+    '20%': {
+      width: '200vw',
+      height: '200vw',
+    },
+
+    '60%': {
+      width: '180vw',
+      height: '180vw',
+    },
+
+    '80%': {
+      width: '210vw',
+      height: '210vw',
+    },
+
+    '100%': {
+      width: '100vw',
+      height: '100vw',
+    },
+  },
 };
