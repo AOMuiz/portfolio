@@ -29,6 +29,10 @@ const projectDetails = [
         src: 'nLog/3.png',
         label: 'Blog Detail Desktop',
       },
+      {
+        src: 'nLog/6.png',
+        label: 'Blog Home Desktop',
+      },
     ],
   },
   {
@@ -39,7 +43,7 @@ const projectDetails = [
     info2:
       'I was responsible for developing the app, integrating local storage and a streak system',
     url: '',
-    repo: 'aomuiz/swotd', // if no repo, the button will not show up
+    repo: 'aomuiz/rn-swotd', // if no repo, the button will not show up
     video: 'swotd-preview.mp4',
     screenshots: [
       {
