@@ -13,8 +13,6 @@ import { AiOutlineFolder } from 'react-icons/ai';
 import featuredProjects from '../../mock/featured';
 
 const Featured = () => {
-  const data = '';
-
   return (
     <Container>
       <div className="projects-header">
@@ -22,7 +20,7 @@ const Featured = () => {
       </div>
       <Row>
         {featuredProjects.map((node, id) => (
-          <Col key={id} lg={4} sm={6} xs={12} className="d-flex">
+          <Col key={node.name} lg={4} sm={6} xs={12} className="d-flex">
             <Card className="mb-4 projects">
               <Card.Body>
                 <Row style={{ fontSize: '1.125rem' }} className="post-meta">

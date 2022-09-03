@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'Abdulwasiu Muiz | Front-end Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: `Hi, I\'m Abdulwasiu Muiz. A react and react-native developer focused on building
+  description: `Hi, I'm Abdulwasiu Muiz. A react and react-native developer focused on building
   responsive cross-platform mobile applications that look the same across various
   devices and have buttery-smooth user experience.`, // e.g: Welcome to my website
 };

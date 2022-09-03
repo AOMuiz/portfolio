@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
@@ -8,8 +7,6 @@ import ProjectImg from '../Image/ProjectImg';
 import projectDetails from '../../mock/details';
 
 const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
-
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -29,7 +26,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <h2 className="section-title-alt">My Works</h2>
 
-          {projectDetails.map((project, index) => {
+          {projectDetails.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
 
             return (

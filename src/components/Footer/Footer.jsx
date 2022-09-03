@@ -1,13 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
-import GithubButtons from '../GithubButtons/GithubButtons';
 import Fade from 'react-reveal/Fade';
 import Roll from 'react-reveal/Roll';
 import { Link as GatsbyLink } from 'gatsby';
-
-import { githubButtons } from '../../mock/data';
 
 const Footer = () => {
   // const { footer } = useContext(PortfolioContext);
@@ -22,10 +17,12 @@ const Footer = () => {
 
       <Container>
         <Fade top>
-          <h2 className="together">Let's work together.</h2>
+          <h2 className="together">Let&apos;s work together.</h2>
         </Fade>
 
-        <h2 className="available">I'm available for full-time, freelance and contract work.</h2>
+        <h2 className="available">
+          I&apos;m available for full-time, freelance and contract work.
+        </h2>
 
         <div className=" vertical">
           <Fade top delay={400}>
@@ -88,19 +85,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-const contactData = [
-  {
-    name: 'map-marker',
-    label: `21 Revolution Street `,
-    country: 'Paris, France',
-  },
-  {
-    name: 'phone',
-    label: '+234 8149174338',
-  },
-  {
-    name: 'envelope',
-    label: 'abdulwasiumuiz@gmail.com',
-  },
-];

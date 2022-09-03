@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 import Jump from 'react-reveal/Jump';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
@@ -9,7 +8,7 @@ import reactLogo from '../../images/reactjs-icon.svg';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -34,10 +33,10 @@ const Header = () => {
             <h1 className="hero-title">
               react-native & react{'\n'}Developer. <br />
               <div className="subtitle">
-                Hi, I'm <b>Abdulwasiu Muiz</b> . An enthusiastic react and react-native developer
-                with robust problem-solving skills, focused on building responsive cross-platform
-                mobile applications that look the same across various devices and have
-                buttery-smooth user experience.
+                Hi, I&apos;m <b>Abdulwasiu Muiz</b> . An enthusiastic react and react-native
+                developer with robust problem-solving skills, focused on building responsive
+                cross-platform mobile applications that look the same across various devices and
+                have buttery-smooth user experience.
               </div>
             </h1>
 
@@ -72,7 +71,7 @@ const Header = () => {
         <Container>
           <h1 className="logo-container">
             <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-              <img src={reactLogo} className="react-logo" />
+              <img src={reactLogo} className="react-logo" alt='logo/>
             </Fade>
             <Jump top={isDesktop} bottom={isMobile} duration={1500} delay={800} cascade>
               <div className="my-name">AOM</div>

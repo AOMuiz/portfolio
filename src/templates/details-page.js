@@ -83,7 +83,7 @@ export default function DetailsPage({ pageContext: { project } }) {
         <section id="app-highlights" className=" background">
           <p className="highlight-text title-color">Features</p>
           <Row>
-            {screenshots.map(({ src, label }, index) => {
+            {screenshots.map(({ src, label }) => {
               return (
                 <Col>
                   <Image
