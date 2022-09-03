@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,6 +9,7 @@ import { FiGithub } from 'react-icons/fi';
 import { BiLinkExternal } from 'react-icons/bi';
 import { AiOutlineFolder } from 'react-icons/ai';
 
+import { nanoid } from 'nanoid';
 import featuredProjects from '../../mock/featured';
 
 const Featured = () => {
@@ -19,7 +19,7 @@ const Featured = () => {
         <p>Other small noteworthy projects &darr;</p>
       </div>
       <Row>
-        {featuredProjects.map((node, id) => (
+        {featuredProjects.map((node) => (
           <Col key={node.name} lg={4} sm={6} xs={12} className="d-flex">
             <Card className="mb-4 projects">
               <Card.Body>
@@ -53,9 +53,9 @@ const Featured = () => {
                     alignItems: 'center',
                   }}
                 >
-                  {node.tags.map((tag, index) => (
+                  {node.tags.map((tag) => (
                     <Badge
-                      key={index}
+                      key={nanoid()}
                       variant="secondary"
                       style={{
                         padding: '7px',

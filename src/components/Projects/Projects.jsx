@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
 import ProjectImg from '../Image/ProjectImg';
 import projectDetails from '../../mock/details';
 

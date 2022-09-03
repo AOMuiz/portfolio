@@ -71,7 +71,7 @@ const Header = () => {
         <Container>
           <h1 className="logo-container">
             <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-              <img src={reactLogo} className="react-logo" alt='logo/>
+              <img src={reactLogo} className="react-logo" alt="logo" />
             </Fade>
             <Jump top={isDesktop} bottom={isMobile} duration={1500} delay={800} cascade>
               <div className="my-name">AOM</div>
