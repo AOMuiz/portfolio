@@ -11,7 +11,7 @@ import { Layout } from '../components/Layout/Layout';
 import Video from '../components/Video/Video';
 
 export default function DetailsPage({ pageContext: { project } }) {
-  const { title, info, info2, img, screenshots, video } = project;
+  const { title, info, info2, img, screenshots, video, repo } = project;
 
   return (
     <Layout>
@@ -32,24 +32,50 @@ export default function DetailsPage({ pageContext: { project } }) {
               <p className="summary-text">
                 {info} {'\n'} {info2}
               </p>
-
-              <span className=" vertical">
-                <Link
-                  target="_blank"
-                  smooth
-                  duration={1000}
-                  // className="cta-btn--hero"/
-                  to="app-highlights"
-                >
-                  <div className="buttonTwo">
-                    <div className="circle" />
-                    More Details
-                  </div>
-                </Link>
-              </span>
+              <Row>
+                <span className="vertical">
+                  <Link
+                    target="_blank"
+                    smooth
+                    duration={1000}
+                    // className="cta-btn--hero"/
+                    to="app-highlights"
+                  >
+                    <div className="buttonTwo">
+                      <div className="circle" />
+                      More Details
+                    </div>
+                  </Link>
+                </span>
+                <div>
+                  {repo && (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-color-main"
+                      href={`https://github.com/${repo}`}
+                    >
+                      Github <i className={`fa fa-${'github' || 'refresh'} fa-inverse`} />
+                    </a>
+                  )}
+                </div>
+              </Row>
             </Col>
             <Col className="app-video" md={4} sm={12}>
-              <Video src={video} />
+              {video ? (
+                <Video src={video} />
+              ) : (
+                <Image
+                  imgStyle={{
+                    objectFit: 'contain',
+                    objectPosition: '50% 50%',
+                    width: '100%',
+                    height: '400px',
+                  }}
+                  src={img}
+                  className="app-screenshot"
+                />
+              )}
             </Col>
           </Row>
         </div>

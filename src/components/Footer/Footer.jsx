@@ -29,7 +29,7 @@ const Footer = () => {
 
         <div className=" vertical">
           <Fade top delay={400}>
-            <a href="mailto: rajibola1997@gmail.com">
+            <a href="mailto: abdulwasiumuiz@gmail.com">
               <GatsbyLink smooth>
                 <div className="buttonTwo">
                   <div className="circle" />
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <div className="flex">
-          <span>© Ridwan Ajibola 2020</span>
+          <span>© Abdulwasiu Mui&lsquo;z 2020</span>
           <div className="line" />
           <Fade cascade>
             <div className="social-links">
@@ -60,11 +60,11 @@ const Footer = () => {
                   );
                 })} */}
 
-              <a href={'https://github.com/rajibola'} rel="noopener noreferrer" target="_blank">
+              <a href={'https://github.com/AOMuiz'} rel="noopener noreferrer" target="_blank">
                 <i className={`fa fa-${'github' || 'refresh'} fa-inverse`} />
               </a>
               <a
-                href={'https://linkedin.com/mwlite/in/ridwan-ajibola-a10616191'}
+                href={'https://linkedin.com/mwlite/in/abdulmuize-abdulwasiu'}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -97,10 +97,10 @@ const contactData = [
   },
   {
     name: 'phone',
-    label: '+234 810 755 2523',
+    label: '+234 8149174338',
   },
   {
     name: 'envelope',
-    label: 'rajibola@gmail.com',
+    label: 'abdulwasiumuiz@gmail.com',
   },
 ];

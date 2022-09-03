@@ -1,93 +1,116 @@
-const { nanoid } = require('nanoid');
-const { path } = require('path');
-const fitAppVideo = '../videos/FitApp.mp4';
+// const { nanoid } = require('nanoid');
+// const { path } = require('path');
 
 const projectDetails = [
   {
-    img: 'grab-n-go/1.png',
-    title: `Grab&Go`,
+    img: 'nLog/1.png',
+    title: 'nLog(SalafiBlog)',
     info:
-      'This is a react-native app for a US-based architecture firm for a US-based  grocery delivery startup, to notify clients of their ordered Item state',
+      'This is a blog website built on the JAMSTACK architecture using Nextjs for the frontend and netlify CMS for content management.',
     info2:
-      'I was responsible for developing the app, implemented animations using react-native and lottie, setup google maps and places API for iOS and Android, setup state management(Redux).',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    video: 'Grab and Go.mp4',
+      'I was responsible for developing the app, integrating a Headless CMS and also writing a pixel perfect CSS based on the provided figma design',
+    url: 'salafiblog.netlify.app',
+    repo: 'aomuiz/nLog', // if no repo, the button will not show up
+    video: '',
     screenshots: [
       {
-        src: 'grab-n-go/1.png',
-        label: 'Choose Location',
+        src: 'nLog/4.png',
+        label: 'Tablet Home',
       },
       {
-        src: 'grab-n-go/2.png',
+        src: 'nLog/5.png',
+        label: 'Post Detail',
+      },
+      {
+        src: 'nLog/2.png',
+        label: 'Home Screen',
+      },
+      {
+        src: 'nLog/3.png',
+        label: 'Blog Detail Desktop',
+      },
+    ],
+  },
+  {
+    img: 'swotd/1.jpg',
+    title: 'swotd',
+    info:
+      'This is a react-native word guessing app for daily word based on scientific vocalbulary.',
+    info2:
+      'I was responsible for developing the app, integrating local storage and a streak system',
+    url: '',
+    repo: 'aomuiz/swotd', // if no repo, the button will not show up
+    video: 'swotd-preview.mp4',
+    screenshots: [
+      {
+        src: 'swotd/1.jpg',
+        label: 'Onboarding',
+      },
+      {
+        src: 'swotd/2.jpg',
+        label: 'Home Screen',
+      },
+      {
+        src: 'swotd/3.jpg',
+        label: 'Result Streak System',
+      },
+      {
+        src: 'swotd/4.jpg',
+        label: 'Result Share',
+      },
+    ],
+  },
+  {
+    img: 'rate-repository/1.png',
+    title: `Rate Repository`,
+    info:
+      'This is a react-native application for rating GitHub repositories, the app include features such as, sorting and filtering reviewed repositories',
+    info2:
+      'I was responsible for developing the app, implemented user authentications using react-native, yup and Formik, setup API request using Graphql for iOS and Android, setup state management(Apollo and React Context).',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+    video: '', // if no repo, the img will show up
+    screenshots: [
+      {
+        src: 'rate-repository/1.png',
+        label: 'Home Screen',
+      },
+      {
+        src: 'rate-repository/4.png',
         label: 'Login Screen',
       },
       {
-        src: 'grab-n-go/3.png',
-        label: 'Register Car Screen',
+        src: 'rate-repository/3.jpg',
+        label: 'Repo Reviews Screen',
       },
       {
-        src: 'grab-n-go/4.png',
-        label: 'Accept/Decline Order',
+        src: 'rate-repository/2.jpg',
+        label: 'Repo Reviews Screen',
       },
     ],
   },
-
   {
-    img: 'FitApp/1.png',
-    title: 'Fit App',
+    img: 'GeoMart/1.png',
+    title: 'GeoMart',
     info:
-      'This is a food-delivery app that is built for fitness, to help user track his orders and customise them on a daily basis.',
+      'This is a Fullstack ecommerce web app that is built for business, to help user track his orders and make payment on products.',
     info2:
-      'I was responsible for for developing the whole app, implemented shared transition effects for picked item, creating reusable components.',
+      'I was responsible for for developing the whole app, implemented stripe payment and state management using react context, creating reusable components.',
     url: '',
     repo: '', // if no repo, the button will not show up.
-    video: 'FitApp.mp4',
+    video: '',
     screenshots: [
       {
-        src: 'FitApp/1.png',
-        label: 'Onboarding Screen',
-      },
-      {
-        src: 'FitApp/2.png',
+        src: 'GeoMart/1.png',
         label: 'Home Screen',
       },
       {
-        src: 'FitApp/3.png',
-        label: 'Customise',
+        src: 'GeoMart/2.png',
+        label: 'Product Details Screen',
       },
       {
-        src: 'FitApp/4.png',
+        src: 'GeoMart/5.png',
         label: 'Choose Menu',
-      },
-    ],
-  },
-
-  {
-    img: 'edacious/1.png',
-    title: 'Edacious',
-    info:
-      'This is a react-native app for daily recipe with location based search and chat feature, and also rating the best recipe.',
-    info2: 'I was responsible for developing the app, and also writing extensive tests with jest',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-    video: 'edacious.mp4',
-    screenshots: [
-      {
-        src: 'edacious/1.png',
-        label: 'Home Screen',
-      },
-      {
-        src: 'edacious/2.png',
-        label: 'Review Section',
-      },
-      {
-        src: 'edacious/3.png',
-        label: 'Chat Screen',
-      },
-      {
-        src: 'edacious/4.png',
-        label: 'Ingredient Screen',
       },
     ],
   },

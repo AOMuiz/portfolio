@@ -51,7 +51,7 @@ const Projects = () => {
                         </p>
                         <p className="mb-4 info2">{info2 || ''}</p>
 
-                        <span className=" vertical">
+                        <span className="vertical">
                           <Link to={`/${title}/`} target="_blank" rel="noopener noreferrer">
                             <div className="buttonTwo">
                               <div className="circle" />
@@ -64,10 +64,10 @@ const Projects = () => {
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="cta-btn text-color-main"
-                            href={repo}
+                            className=" text-color-main"
+                            href={`https://github.com/${repo}`}
                           >
-                            Source Code
+                            Github <i className={`fa fa-${'github' || 'refresh'} fa-inverse`} />
                           </a>
                         )}
                       </div>
