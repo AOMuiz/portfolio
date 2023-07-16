@@ -3,12 +3,66 @@
 
 const projectDetails = [
   {
+    img: 'ataasil/so.png',
+    title: 'Ataasil',
+    info:
+      "Attaasil University is an online based university that set out the goal of benefitting mankind with the knowledge of the Qur'an and Sunnah In Shaa Allah.",
+    info2:
+      'I was responsible for for developing internationalization(i18n) functionality for changing from arabic to other languages, implemented api integration and state management using apollo & graphql, maintaining the front-end documentation while ensuring consistency and efficiency.',
+    url: 'https://ataasil.vercel.app',
+    repo: 'AOMuiz/ataasil', // if no repo, the button will not show up.
+    video: '',
+    screenshots: [
+      {
+        src: 'ataasil/1.png',
+        label: 'Home Screen',
+      },
+      {
+        src: 'ataasil/2.png',
+        label: 'Auth Screen',
+      },
+      {
+        src: 'ataasil/4.png',
+        label: 'Course Screen',
+      },
+      {
+        src: 'ataasil/3.png',
+        label: 'Responsive screens',
+      },
+    ],
+  },
+  {
+    img: 'innovatics/1.png',
+    title: 'Innovatics',
+    info:
+      'This is a Hands-on, interact technical Learning Platform for data scientist, and other technical fields.',
+    info2:
+      'I was responsible for for developing the whole website while working closely with the design team. Implemented firebase authenticatioin state management using react context, creating reusable components with styled components, e.t.c.',
+    url: 'https://innovatics.ai',
+    repo: '', // if no repo, the button will not show up.
+    video: '',
+    screenshots: [
+      {
+        src: 'innovatics/1.png',
+        label: 'Home Screen',
+      },
+      {
+        src: 'innovatics/2.png',
+        label: 'Authentication Screen',
+      },
+      {
+        src: 'innovatics/3.png',
+        label: 'Course Detail',
+      },
+    ],
+  },
+  {
     img: 'nLog/1.png',
     title: 'nLog(SalafiBlog)',
     info:
       'This is a blog website built on the JAMSTACK architecture using Nextjs for the frontend and netlify CMS for content management.',
     info2:
-      'I was responsible for developing the app, integrating a Headless CMS and also writing a pixel perfect CSS based on the provided figma design',
+      'I was responsible for developi`ng the app, integrating a Headless CMS and also writing a pixel perfect CSS based on the provided figma design',
     url: 'salafiblog.netlify.app',
     repo: 'aomuiz/nLog', // if no repo, the button will not show up
     video: '',
@@ -93,31 +147,7 @@ const projectDetails = [
       },
     ],
   },
-  {
-    img: 'GeoMart/1.png',
-    title: 'GeoMart',
-    info:
-      'This is a Fullstack ecommerce web app that is built for business, to help user track his orders and make payment on products.',
-    info2:
-      'I was responsible for for developing the whole app, implemented stripe payment and state management using react context, creating reusable components.',
-    url: '',
-    repo: '', // if no repo, the button will not show up.
-    video: '',
-    screenshots: [
-      {
-        src: 'GeoMart/1.png',
-        label: 'Home Screen',
-      },
-      {
-        src: 'GeoMart/2.png',
-        label: 'Product Details Screen',
-      },
-      {
-        src: 'GeoMart/5.png',
-        label: 'Choose Menu',
-      },
-    ],
-  },
+  
 ];
 
 module.exports = projectDetails;

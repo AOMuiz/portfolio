@@ -55,17 +55,6 @@ const Projects = () => {
                             </div>
                           </Link>
                         </span>
-
-                        {repo && (
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className=" text-color-main"
-                            href={`https://github.com/${repo}`}
-                          >
-                            Github <i className={`fa fa-${'github' || 'refresh'} fa-inverse`} />
-                          </a>
-                        )}
                       </div>
                     </div>
                   </Fade>

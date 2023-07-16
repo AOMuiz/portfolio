@@ -11,7 +11,7 @@ import { Layout } from '../components/Layout/Layout';
 import Video from '../components/Video/Video';
 
 export default function DetailsPage({ pageContext: { project } }) {
-  const { title, info, info2, img, screenshots, video, repo } = project;
+  const { title, info, info2, img, screenshots, video, url } = project;
 
   return (
     <Layout>
@@ -48,15 +48,19 @@ export default function DetailsPage({ pageContext: { project } }) {
                   </Link>
                 </span>
                 <div>
-                  {repo && (
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-color-main"
-                      href={`https://github.com/${repo}`}
-                    >
-                      Github <i className={`fa fa-${'github' || 'refresh'} fa-inverse`} />
-                    </a>
+                  {url && (
+                     <span className="vertical ctn-btn--live">
+                     <a
+                       target="_blank"
+                       href={url}
+                       // className="cta-btn--hero"
+                     >
+                       <div className="buttonTwo" >
+                         <div className="circle" />
+                         Live 
+                       </div>
+                     </a>
+                   </span>
                   )}
                 </div>
               </Row>
